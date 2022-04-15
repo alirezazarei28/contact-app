@@ -6,7 +6,7 @@ Simple application that shows contacts of a user,  built with `React`, `Typescri
 
 ## Demo
 
-here you can see the [demo](https://contacts-app-git-main-alirezazarei28.vercel.app/)
+here you can see the [demo](https://contact-app-alirezazarei28.vercel.app/)
 
 ## Run the project
 
@@ -17,7 +17,7 @@ You will need node and npm installed on your machine to run the project
 Clone the project:
 
 ```bash
-git clone https://github.com/alirezazarei28/contacts-app
+git clone https://github.com/alirezazarei28/contact-app
 ```
 
 Go to the project directory
