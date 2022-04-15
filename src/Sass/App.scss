@@ -1,0 +1,41 @@
+@import "_variables";
+@import "_mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  min-height: 400px;
+  max-width: 1200px;
+  margin: auto;
+
+  &__loading {
+    @include flexCenter;
+    min-height: 400px;
+    background-color: $background-primary;
+    width: 100%;
+  }
+
+  @include mobile {
+    padding: 8px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

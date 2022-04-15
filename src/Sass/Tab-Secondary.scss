@@ -1,0 +1,36 @@
+@import "_variables";
+@import "_mixins";
+
+.tab {
+  height: 40px;
+  @include flexCenter;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid $background-primary;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px;
+  cursor: pointer;
+  &--no-bb {
+    border-bottom: 0;
+    background: $background-secondary;
+  }
+  &--disable {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  &__number {
+    font-size: small;
+    align-self: flex-end;
+    padding-right: 4px;
+  }
+  p {
+    white-space: nowrap;
+  }
+}
+
+.tabs {
+  display: flex;
+}

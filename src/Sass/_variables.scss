@@ -1,0 +1,25 @@
+$background-primary: #dfdfdf;
+$background-secondary: #f1f1f1;
+$background-active: #a3a3a3;
+$background-dark: #303030;
+$background-red: #c53628;
+
+$border-color-main: #000000;
+$border-color-second: #d1d1d1;
+
+$color-main: #c3c0c0;
+$color-gray: #959191;
+$color-dark: #000000;
+$color-error: #f84242;
+$color-white: #ffffff;
+
+$shadow-color: #f3e0e0;
+$outline-color: #b9b8b8;
+
+$box-shadow-modal: rgb(0 0 0 / 35%) 0px 5px 15px;
+$box-shadow-active: 0px -1px 0px 0px $shadow-color;
+$box-shadow-selected: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+  rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+  rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+$mobile-width: 900px;

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  min-height: 400px;
+  max-width: 1200px;
+  margin: auto;
+}
+.container__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: #dfdfdf;
+  width: 100%;
+}
+@media (max-width: 900px) {
+  .container {
+    padding: 8px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

@@ -1,0 +1,78 @@
+@import "_variables";
+@import "_mixins";
+
+.tabs__box {
+  display: flex;
+  flex-wrap: wrap;
+  @include mobile {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+.tabs__tab {
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  background: $color-white;
+  cursor: pointer;
+  border: 1px solid $background-primary;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  @include mobile {
+    padding: 8px;
+    flex-grow: unset;
+  }
+
+  &:hover {
+    background-color: $background-secondary;
+  }
+
+  &:focus {
+    background-color: $background-active;
+    border: 1px solid $background-active;
+    outline: 1px solid $outline-color;
+    border-bottom: none;
+  }
+
+  &--active {
+    background-color: $background-active;
+    border: 1px solid $background-active;
+    transform: scale(1.08);
+    box-shadow: $box-shadow-active;
+    border-bottom: none;
+  }
+
+  &--disable {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+    outline: none;
+  }
+}
+
+.tabs__sub-label {
+  font-size: x-small;
+  padding-left: 5px;
+}
+
+.tabs__wrapper {
+  width: 100%;
+  height: inherit;
+  background: #f1f1f1;
+  @include mobile {
+    display: flex;
+  }
+}
+
+@include mobile {
+  .tabs__content {
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+}

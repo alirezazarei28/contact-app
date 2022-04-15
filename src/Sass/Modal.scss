@@ -1,0 +1,52 @@
+@import "_variables";
+@import "_mixins";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 1em;
+  z-index: 999999;
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__body {
+    display: flex;
+    position: relative;
+    background-color: $background-secondary;
+    color: $color-dark;
+    max-width: 550px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: $box-shadow-modal;
+
+    @include mobile {
+      max-width: 372px;
+    }
+  }
+  &__close {
+    @include flexCenter;
+    @include mobile {
+      position: absolute;
+    }
+    color: $color-dark;
+    cursor: pointer;
+    font-size: 1.25em;
+    z-index: 999999;
+    margin-left: 9px;
+    margin-top: 4px;
+    width: 22px;
+    height: 22px;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+}

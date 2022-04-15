@@ -1,0 +1,90 @@
+.contacts-list,
+.no-contact {
+  background-color: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.contact__name {
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 10px;
+  width: 40%;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: left;
+  max-height: 40px;
+  margin-left: 5%;
+}
+.contact__name:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+.contact__name:visited, .contact__name:active, .contact__name:focus-visible, .contact__name:focus {
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+@media (max-width: 900px) {
+  .contact__name {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+}
+
+.contact-preview {
+  display: flex;
+  padding: 18px 0;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .contact-preview {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+.contact-preview__img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+.contact-preview__name {
+  margin-bottom: 12px;
+  color: #c3c0c0;
+}
+.contact-preview__info {
+  margin-left: 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 900px) {
+  .contact-preview__info {
+    margin-top: 20px;
+  }
+}
+.contact-preview__username {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right: 10px;
+  top: -4px;
+  padding: 5px;
+  color: white;
+  background-color: #c53628;
+}
+
+.row {
+  display: flex;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.row__value {
+  padding-left: 10px;
+}
+.row__key {
+  width: 60px;
+}
